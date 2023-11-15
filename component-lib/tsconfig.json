@@ -1,0 +1,30 @@
+{
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "module": "esnext",
+    "allowJs": true,
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "declarationDir": "dist"
+  }
+}

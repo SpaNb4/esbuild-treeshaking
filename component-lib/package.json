@@ -1,0 +1,31 @@
+{
+  "name": "component-lib",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node esbuild.config.js && tsc --emitDeclarationOnly --outDir dist && npm run fake-publish",
+    "fake-publish": "rm -rf package && mkdir package && cp -r dist package.json package-lock.json package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "esbuild": "^0.19.5",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "date-fns": "^2.30.0"
+  }
+}
